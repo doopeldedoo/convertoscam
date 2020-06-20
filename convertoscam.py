@@ -41,7 +41,7 @@ for line in f:
 	    	server.write("protocol=cccam\n")
 	    	server.write("device="+domain+","+port+"\n")
 	    	server.write("user="+user+"\n")
-	    	server.write("password"+password+"\n")
+	    	server.write("password="+password+"\n")
 	    	server.write("cccversion=2.3.2\n")
 	    	server.write("group=1,2,3\n")
 	    	server.write("inactivitytimeout=0\n")
