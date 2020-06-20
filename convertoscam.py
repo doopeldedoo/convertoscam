@@ -36,24 +36,12 @@ for line in f:
 	    else:
 	    	server = open(Olocation,"a")
 	   	server.write("[reader]\n")
-	    	label = ("label=")
-	    	domain1 = label+domain
-	    	server.write(domain1)
-	    	server.write('\n')
+	    	server.write("label="+domain+"\n")
 	    	server.write("enable=1\n")
 	    	server.write("protocol=cccam\n")
-	    	device = ("device=")
-	    	comma = (",")
-	    	device1 = device+domain+comma+port
-	    	server.write(device1)
-	    	server.write('\n')
-	    	user1 = ("user=")
-	    	user2 = user1+user
-	    	server.write(user2)
-	    	server.write('\n')
-	    	pwd = ("password=")
-	    	pwd1 = pwd+password
-	    	server.write(pwd1)
+	    	server.write("device="+domain+","+port+"\n")
+	    	server.write("user="+user+"\n")
+	    	server.write("password"+pwd1+"\n")
 	    	server.write("cccversion=2.3.2\n")
 	    	server.write("group=1,2,3\n")
 	    	server.write("inactivitytimeout=0\n")
