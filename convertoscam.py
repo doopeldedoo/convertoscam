@@ -35,7 +35,7 @@ for line in f:
 		    print("Connection Problem, trying next one")		
 	    else:
 	    	server = open(Olocation,"a")
-	   	  server.write("[reader]\n")
+	   	server.write("[reader]\n")
 	    	label = ("label=")
 	    	domain1 = label+domain
 	    	server.write(domain1)
